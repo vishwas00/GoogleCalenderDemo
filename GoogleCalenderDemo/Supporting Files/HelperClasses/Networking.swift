@@ -95,6 +95,27 @@ class HttpClient
         task.resume()
     }
     
+    class func downloadVideo(url: String,fileType: String) {
+        Alamofire.request(url,method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).downloadProgress(closure : { (progress) in
+            print(progress.fractionCompleted)
+        }).responseData{ (response) in
+            print(response)
+            print(response.result.description)
+            if let data = response.result.value {
+                
+                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+                let videoURL = documentsURL.appendingPathComponent(fileType)
+                do {
+                    try data.write(to: videoURL)
+                } catch {
+                    print("Something went wrong!")
+                }
+                print(videoURL)
+            } else {
+//                self.removeProgressView()
+            }
+        }
+    }
     
     class func postRequest( urlString: String, requestData: [String:Any]?,headerRequired: Bool? = false, successBlock: @escaping (_ response: AnyObject)->Void, errorBlock: @escaping (_ errorMessage :String)->Void )
     {

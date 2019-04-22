@@ -34,14 +34,26 @@ extension UIViewController{
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert);
         alertController.addAction(cancel)
         alertController.addAction(ok)
-        
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func customRightBarButtonTitle(title: String){
+        let rightButton = UIButton() //Custom back Button
+        rightButton.frame = CGRect(x: 0, y: 0, width: 42, height: 36)
+        rightButton.setTitle(title, for: .normal)
+        rightButton.setTitleColor(.black, for: .normal)
+        rightButton .addTarget(self, action: #selector(self.btnDoneClickedRightTitle(sender:)), for: .touchUpInside)
+        let rightBarButton = UIBarButtonItem()
+        rightBarButton.customView = rightButton
+        self.navigationItem.rightBarButtonItem = rightBarButton
+        let negativeSpacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+        negativeSpacer.width = 0;
+        self.navigationItem.setRightBarButtonItems([negativeSpacer, rightBarButton], animated: false)
     }
     
     func customRightBarButton(image: UIImage){
         let rightButton = UIButton() //Custom back Button
-        rightButton.frame = CGRect(x: 0, y: 0, width: 42, height: 36)
-        rightButton.setTitle(title, for: .normal)
+        rightButton.frame = CGRect(x: 0, y: 0, width: 42, height: 42)
         rightButton.setImage(image, for: .normal)
         rightButton .addTarget(self, action: #selector(self.btnDoneClicked(sender:)), for: .touchUpInside)
         let rightBarButton = UIBarButtonItem()
@@ -50,6 +62,27 @@ extension UIViewController{
         let negativeSpacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         negativeSpacer.width = 0;
         self.navigationItem.setRightBarButtonItems([negativeSpacer, rightBarButton], animated: false)
+    }
+    
+    func customLeftBarButton(title: String){
+        let leftButton = UIButton() //Custom back Button
+        leftButton.frame = CGRect(x: 0, y: 0, width: 42, height: 36)
+        leftButton.setTitle(title, for: .normal)
+        leftButton.setTitleColor(.black, for: .normal)
+        leftButton .addTarget(self, action: #selector(self.btnDoneClickedLeft(sender:)), for: .touchUpInside)
+        let leftBarButton = UIBarButtonItem()
+        leftBarButton.customView = leftButton
+        self.navigationItem.leftBarButtonItem = leftBarButton
+        let negativeSpacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+        negativeSpacer.width = 0;
+        self.navigationItem.setLeftBarButtonItems([negativeSpacer, leftBarButton], animated: false)
+    }
+    
+    @objc func btnDoneClickedRightTitle(sender:UIButton){
+    }
+    
+    @objc func btnDoneClickedLeft(sender:UIButton)
+    { //Dne Button
     }
     
     @objc func btnDoneClicked(sender:UIButton)
@@ -74,4 +107,5 @@ extension UIViewController{
         let time = hoursInmint * 60 + difference.minute!
         return "\(time)"
     }
+    
 }

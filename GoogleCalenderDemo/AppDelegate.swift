@@ -9,7 +9,7 @@
 import UIKit
 import UserNotifications
 import GoogleSignIn
-
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,8 +20,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Initialize sign-in
+        GIDSignIn.sharedInstance()?.scopes = ["https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive.readonly","https://www.googleapis.com/auth/drive.metadata.readonly","https://www.googleapis.com/auth/tasks.readonly"]
         GIDSignIn.sharedInstance().clientID = "290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com"
+        printDocumentsDirectory()
+        FirebaseApp.configure()
+//        Database.database().isPersistenceEnabled = true
+        self.authLogin()
         return true
+    }
+    
+    func authLogin(){
+        let id = UserDefaults.standard.value(forKey: "id") as? String
+        if id != "" && id != nil {
+            
+            let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+            let navigationController:UINavigationController = storyBoard.instantiateInitialViewController() as! UINavigationController
+            let vc = storyBoard.instantiateViewController(withIdentifier: "CalenderViewController") as? CalenderViewController
+            navigationController.viewControllers = [vc] as! [UIViewController]
+            self.window?.rootViewController = navigationController
+        }else  {
+            let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+            let navigationController:UINavigationController = storyBoard.instantiateInitialViewController() as! UINavigationController
+            let vc = storyBoard.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController
+            navigationController.viewControllers = [vc] as! [UIViewController]
+            self.window?.rootViewController = navigationController
+        }
+
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -44,6 +68,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    private func printDocumentsDirectory() {
+        let fileManager = FileManager.default
+        if let documentsDir = fileManager.urls(for: .documentDirectory, in: .userDomainMask).last {
+            print("Documents directory: \(documentsDir.absoluteString)")
+        } else {
+            print("Error: Couldn't find documents directory")
+        }
     }
     
 }

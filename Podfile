@@ -7,6 +7,9 @@ target 'GoogleCalenderDemo' do
      pod 'Alamofire'
      pod 'ObjectMapper'
      pod 'GoogleSignIn'
+     pod 'Firebase/Core'
+     pod 'Firebase/Database'
+     pod 'Firebase/Auth'
   # Pods for GoogleCalenderDemo
 
 end

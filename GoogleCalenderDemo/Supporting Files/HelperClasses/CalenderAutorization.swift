@@ -33,8 +33,8 @@ class CalenderAuth : NSObject{
         for calendar in calendars {
             isolationQueue.async(flags: .barrier) {
                 if calendar.title == calenderName {
-                    let startDate = dict.updated?.start?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
-                    var endDate = dict.endDate?.end?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
+                    let startDate = dict.date?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
+                    var endDate = dict.dateEnd?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
                     if endDate == nil {
                         endDate = startDate?.addingTimeInterval(addTimeintervals.defaultEndTime) ?? Date()
                     }
@@ -72,8 +72,8 @@ class CalenderAuth : NSObject{
             if calendar.title == calenderTaskName {
                 isolationQueue.async(flags: .barrier) {
                     
-                    let startDate = dict.updated?.start?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
-                    let endDate = dict.endDate?.end?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
+                    let startDate = dict.date?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
+                    let endDate = dict.dateEnd?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
                     
                     let predicate2 = self.eventStore.predicateForEvents(withStart: startDate ?? Date(), end: endDate ?? startDate?.addingTimeInterval(addTimeintervals.defaultEndTime) ?? Date(), calendars: nil)
                     
@@ -208,8 +208,8 @@ class CalenderAuth : NSObject{
             if calendar.title == calenderName {
                 isolationQueue.async(flags: .barrier) {
                     
-                    let startDate = dict.updated?.start?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
-                    let endDate = dict.endDate?.end?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
+                    let startDate = dict.date?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
+                    let endDate = dict.dateEnd?.UTCDateToLocalDate(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateTimeUTC)
                     
                     let predicate2 = self.eventStore.predicateForEvents(withStart: startDate ?? Date(), end: endDate ?? startDate?.addingTimeInterval(addTimeintervals.defaultEndTime) ?? Date(), calendars: nil)
                     

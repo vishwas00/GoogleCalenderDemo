@@ -15,6 +15,9 @@ class calenderobj: Mappable {
     var status : String?
     var description : String?
     var endDate : endDate?
+    var id : String?
+    var date: String?
+    var dateEnd: String?
     required init?(map: Map) {
         mapping(map: map)
     }
@@ -25,6 +28,9 @@ class calenderobj: Mappable {
         summary <- map["summary"]
         status <- map["status"]
         description <- map["description"]
+        id <- map["id"]
+        date <- map["date"]
+        dateEnd <- map["dateEnd"]
     }
 }
 

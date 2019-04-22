@@ -12,6 +12,7 @@ class Task: Mappable {
     var id : String?
     var title : String?
     var selfLink : String?
+    
     var subTask = [SubTask]()
     required init?(map: Map) {
         mapping(map: map)

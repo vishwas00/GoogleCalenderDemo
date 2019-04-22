@@ -50,7 +50,8 @@ class AlertView: UIView {
     
     func updateViewTasks() {
         imageViewCalendarPopUp.image = UIImage.init(named: "events")
-        self.labelDate.text = calendarTasks?.updated?.DateFromString(format: DateFormat.dateTimeUTC2, convertedFormat: DateFormat.dateNow)
+        let taskdate = calendarTasks?.due ?? calendarTasks?.updated ?? ""
+        self.labelDate.text = taskdate.DateFromString(format: DateFormat.dateTimeUTC2, convertedFormat: DateFormat.dateNow)
         self.labelTime.isHidden = true
         self.labelTitle.text = calendarTasks?.title
         self.labelDescription.text = calendarTasks?.notes
@@ -58,8 +59,8 @@ class AlertView: UIView {
     
     func updateView() {
         imageViewCalendarPopUp.image = UIImage.init(named: "calendar")
-        self.labelDate.text = calenderEvents?.updated?.start?.DateFromString(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateNow)
-        self.labelTime.text = calenderEvents?.updated?.start?.DateFromString(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.timeAmPM)
+        self.labelDate.text = calenderEvents?.date?.DateFromString(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.dateNow)
+        self.labelTime.text = calenderEvents?.date?.DateFromString(format: DateFormat.dateTimeUTC, convertedFormat: DateFormat.timeAmPM)
         self.labelTitle.text = calenderEvents?.summary
         self.labelDescription.text = calenderEvents?.description
     }
