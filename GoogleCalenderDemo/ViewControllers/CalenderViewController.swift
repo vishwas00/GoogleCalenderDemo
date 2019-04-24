@@ -382,7 +382,9 @@ extension CalenderViewController{
                     self.calenderDrive.removeAll()
                     for dataupdate in data {
                         if let userInfoObj = Mapper<Drive>().map(JSONObject: dataupdate) {
-                            self.calenderDrive.append(userInfoObj)
+                            if driveMimeType(rawValue: dataupdate["mimeType"] as? String ?? "") != nil {
+                                self.calenderDrive.append(userInfoObj)
+                            }
                         }
                     }
                     compeltion()
