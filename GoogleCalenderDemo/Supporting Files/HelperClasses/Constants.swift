@@ -20,10 +20,10 @@ struct userDefaultsConstants {
 }
 
 enum googleInfoKeys : String {
-    case refreshToken = "1/TE5QtxlnCiuelg_ZiwjDQWE4Mh5DD1VtMK5udTnMtqY"
-    case googleApiKey = "AIzaSyCC_NIUvuKqEMomlTNh7KNS-TgT1t7WK98"
-    case googleClientSecret = "4Xb90bIWLenMxG5yXg2B8UPL"
-    case googleClientId = "290826560562-6iflh5ena0avsg2rd9sjvbv36t3vqes1.apps.googleusercontent.com"
+    case refreshToken = "1/Lo-xd0Xzj6TClhP3PMCs6p2bQGScNbxdescOyM-dOJU"
+    case googleApiKey = "AIzaSyCuDV6od-hyDWjWl0xlQmwbqkribSoBAWA"
+    case googleClientSecret = "XQen0XgpagdTDTMtc_qU2Jqc"
+    case googleClientId = "204771041462-dhhjksojene1hh00267af2oivm03ve5c.apps.googleusercontent.com"
 }
 
 enum appConstants : String {
@@ -67,7 +67,7 @@ enum GetApiURL {
         case .kAuthGoogle:
             return "https://www.googleapis.com/oauth2/v4/token"
         case .kGetEvents:
-            return baseURL + "calendar/v3/calendars/busywizzy1@gmail.com/events?key=\(googleInfoKeys.googleApiKey.rawValue)"
+            return baseURL + "calendar/v3/calendars/amlynd@gmail.com/events?key=\(googleInfoKeys.googleApiKey.rawValue)"
         case .kGetTasks:
             return baseURL + "tasks/v1/users/@me/lists?pp=1&key=\(googleInfoKeys.googleApiKey.rawValue)"
         case .kGetSubTasks:

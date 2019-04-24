@@ -10,6 +10,7 @@ import UIKit
 import UserNotifications
 import GoogleSignIn
 import Firebase
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,9 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         // Initialize sign-in
         GIDSignIn.sharedInstance()?.scopes = ["https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive.readonly","https://www.googleapis.com/auth/drive.metadata.readonly","https://www.googleapis.com/auth/tasks.readonly"]
-        GIDSignIn.sharedInstance().clientID = "290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().clientID = "204771041462-mfpi0n4o30so4goihmlkvvpnqj7ginlj.apps.googleusercontent.com"
         printDocumentsDirectory()
         FirebaseApp.configure()
+        IQKeyboardManager.shared.enable = true
 //        Database.database().isPersistenceEnabled = true
         self.authLogin()
         return true

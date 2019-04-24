@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com</string>
+	<string>204771041462-mfpi0n4o30so4goihmlkvvpnqj7ginlj.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo</string>
+	<string>com.googleusercontent.apps.204771041462-mfpi0n4o30so4goihmlkvvpnqj7ginlj</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.busywizzy.GoogleCalender</string>
+	<string>com.NunawadingStaging.App</string>
 </dict>
 </plist>

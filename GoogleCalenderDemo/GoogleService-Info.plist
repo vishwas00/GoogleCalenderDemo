@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com</string>
+	<string>34796889668-e1vmdf0dh5li87a4q2pt0r4t7k7hbhir.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo</string>
-	<key>ANDROID_CLIENT_ID</key>
-	<string>290826560562-bbi2b99p8r6fuu4nrpdl0rnjks2jf0v7.apps.googleusercontent.com</string>
+	<string>com.googleusercontent.apps.34796889668-e1vmdf0dh5li87a4q2pt0r4t7k7hbhir</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDH7YTb7QEA4T9g8OihMPwAHdypfP3LlTo</string>
+	<string>AIzaSyCBK3Sfs7CMeU8A428eLaf51KtvANCBEGw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>290826560562</string>
+	<string>34796889668</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.busywizzy.GoogleCalender</string>
+	<string>com.NunawadingStaging.App</string>
 	<key>PROJECT_ID</key>
-	<string>calenderdemo123</string>
+	<string>assembly-77359</string>
 	<key>STORAGE_BUCKET</key>
-	<string>calenderdemo123.appspot.com</string>
+	<string>assembly-77359.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:290826560562:ios:d7b11db8171d6c7e</string>
+	<string>1:34796889668:ios:5dded279a552b4a6</string>
 	<key>DATABASE_URL</key>
-	<string>https://calenderdemo123.firebaseio.com</string>
+	<string>https://assembly-77359.firebaseio.com</string>
 </dict>
 </plist>

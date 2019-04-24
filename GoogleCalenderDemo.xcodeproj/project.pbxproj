@@ -13,11 +13,11 @@
 		3A16E2CF226065770016CFD4 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16E2CE226065770016CFD4 /* UserTableViewCell.swift */; };
 		3A1FFD182252227F004A1B6E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1FFD172252227F004A1B6E /* SignInViewController.swift */; };
 		3A1FFD1A22522288004A1B6E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1FFD1922522288004A1B6E /* SignUpViewController.swift */; };
-		3A2E49FF2236832700749BFF /* client_290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2E49FE2236832700749BFF /* client_290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com.plist */; };
+		3A30540222702E1800218C15 /* client_204771041462-mfpi0n4o30so4goihmlkvvpnqj7ginlj.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A30540122702E1800218C15 /* client_204771041462-mfpi0n4o30so4goihmlkvvpnqj7ginlj.apps.googleusercontent.com.plist */; };
+		3A3054062270371E00218C15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A3054052270371E00218C15 /* GoogleService-Info.plist */; };
 		3A48F35922268DE5000579BF /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48F35822268DE5000579BF /* UIColorEx.swift */; };
 		3A48F35B22270715000579BF /* TasksDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48F35A22270715000579BF /* TasksDataModel.swift */; };
 		3A48F35D22271A14000579BF /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48F35C22271A14000579BF /* TaskViewController.swift */; };
-		3A7235662255DCBD00200219 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A7235652255DCBC00200219 /* GoogleService-Info.plist */; };
 		3A7235682256202300200219 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7235672256202300200219 /* UserModel.swift */; };
 		3A72356C2257215F00200219 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72356B2257215F00200219 /* IntExtension.swift */; };
 		3A72356E2257474E00200219 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72356D2257474E00200219 /* StringExtension.swift */; };
@@ -67,11 +67,11 @@
 		3A16E2CE226065770016CFD4 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		3A1FFD172252227F004A1B6E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3A1FFD1922522288004A1B6E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		3A2E49FE2236832700749BFF /* client_290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		3A30540122702E1800218C15 /* client_204771041462-mfpi0n4o30so4goihmlkvvpnqj7ginlj.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_204771041462-mfpi0n4o30so4goihmlkvvpnqj7ginlj.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		3A3054052270371E00218C15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A48F35822268DE5000579BF /* UIColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
 		3A48F35A22270715000579BF /* TasksDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataModel.swift; sourceTree = "<group>"; };
 		3A48F35C22271A14000579BF /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
-		3A7235652255DCBC00200219 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A7235672256202300200219 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		3A72356B2257215F00200219 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		3A72356D2257474E00200219 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -186,8 +186,8 @@
 				3A8BFEFE221BD99300857E6A /* StoryBoards */,
 				3A8BFED0221ABB2F00857E6A /* AppDelegate.swift */,
 				3A8BFED7221ABB3100857E6A /* Assets.xcassets */,
-				3A7235652255DCBC00200219 /* GoogleService-Info.plist */,
-				3A2E49FE2236832700749BFF /* client_290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com.plist */,
+				3A3054052270371E00218C15 /* GoogleService-Info.plist */,
+				3A30540122702E1800218C15 /* client_204771041462-mfpi0n4o30so4goihmlkvvpnqj7ginlj.apps.googleusercontent.com.plist */,
 				3A8BFEDC221ABB3100857E6A /* Info.plist */,
 			);
 			path = GoogleCalenderDemo;
@@ -390,9 +390,9 @@
 				3A8BFEDB221ABB3100857E6A /* LaunchScreen.storyboard in Resources */,
 				3A8BFEE3221AC40300857E6A /* AlertViews.xib in Resources */,
 				3A8BFED8221ABB3100857E6A /* Assets.xcassets in Resources */,
-				3A2E49FF2236832700749BFF /* client_290826560562-tdgvdtt0i1bfhp71egdvm7umalfb6mbo.apps.googleusercontent.com.plist in Resources */,
 				3A8BFED6221ABB2F00857E6A /* Main.storyboard in Resources */,
-				3A7235662255DCBD00200219 /* GoogleService-Info.plist in Resources */,
+				3A30540222702E1800218C15 /* client_204771041462-mfpi0n4o30so4goihmlkvvpnqj7ginlj.apps.googleusercontent.com.plist in Resources */,
+				3A3054062270371E00218C15 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +410,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -420,6 +421,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -716,7 +718,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.busywizzy.GoogleCalender;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NunawadingStaging.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -737,7 +739,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.busywizzy.GoogleCalender;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NunawadingStaging.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

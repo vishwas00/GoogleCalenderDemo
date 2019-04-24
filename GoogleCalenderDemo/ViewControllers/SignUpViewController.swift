@@ -61,6 +61,7 @@ class SignUpViewController: UIViewController {
             if error == nil {
                 self.storeUser(id: user?.user.uid ?? "")
             }else{
+                Indicator.sharedInstance.hideIndicator()
                 self.showAlert(withTitle: appConstants.KAppName.rawValue, message: error?.localizedDescription ?? "")
             }
         }

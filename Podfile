@@ -10,6 +10,8 @@ target 'GoogleCalenderDemo' do
      pod 'Firebase/Core'
      pod 'Firebase/Database'
      pod 'Firebase/Auth'
+     pod 'IQKeyboardManagerSwift'
+
   # Pods for GoogleCalenderDemo
 
 end
